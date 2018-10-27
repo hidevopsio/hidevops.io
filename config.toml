@@ -46,16 +46,16 @@ theme = "timer-hugo"
         enable  = true
         bgImage = "images/cloud.jpg"
         heading = "HI, MY NAME IS JOHN DENG & I AM A"
-        description = "WITH 20 YEARS EXPERIENCE, I'VE OCCUPIED MANY ROLES INCLUDING CLOUD NATIVE ARCHITECT"
+        description = "WITH 20 YEARS EXPERIENCE, I'VE OCCUPIED MANY ROLES INCLUDING CLOUD NATIVE EVANGELIST, DOMAIN EXPERT, AND SOFTWARE ARCHITECT"
         btn     = true
         btnText = "Hiboot"
         btnURL  = "https://hiboot.hidevops.io/"
         [[params.banner.flipText]]
             title   = "CLOUD NATIVE EVANGELIST"
         [[params.banner.flipText]]
-            title   = "GOPHER"
+            title   = "DOMAIN EXPERT"
         [[params.banner.flipText]]
-            title   = "ARCHITECT"
+            title   = "SOFTWARE ARCHITECT"
 
     # Homepage About Section
     # [params.about]
