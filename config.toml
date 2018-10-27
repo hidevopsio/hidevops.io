@@ -51,11 +51,11 @@ theme = "timer-hugo"
         btnText = "Hiboot"
         btnURL  = "https://hiboot.hidevops.io/"
         [[params.banner.flipText]]
-            title   = "CLOUD NATIVE EVANGELIST"
+            title   = "EVANGELIST"
         [[params.banner.flipText]]
             title   = "DOMAIN EXPERT"
         [[params.banner.flipText]]
-            title   = "SOFTWARE ARCHITECT"
+            title   = "ARCHITECT"
 
     # Homepage About Section
     # [params.about]
