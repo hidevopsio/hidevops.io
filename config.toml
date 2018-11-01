@@ -1,6 +1,6 @@
 baseURL = "https://hidevops.io/"
 languageCode = "en-us"
-title = "hidevops.io | Continuous Integration and Continuous Delivery"
+title = "Hidevops | Deliver Business Value"
 theme = "timer-hugo"
 
 pygmentscodefences = true
@@ -39,7 +39,7 @@ pygmentsStyle = "tango" # "emacs" # "autumn" # "manni" # "friendly"
     # You can use either an image or text as logo.
     # To use an image use 'logo' (logo itself) and 'logo_alt' (alternative text if image cannot displayed)
     # To use text as logo use 'logo_text'
-    logo = "images/hidevops.png"
+    logo = "images/hidevops-logo.png"
     logo_alt = "logo"
     #logo_text = "logo_text"
 
