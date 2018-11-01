@@ -3,6 +3,12 @@ languageCode = "en-us"
 title = "hidevops.io | Continuous Integration and Continuous Delivery"
 theme = "timer-hugo"
 
+pygmentscodefences = true
+
+# Change highlight style here.
+# For a full list see: https://xyproto.github.io/splash/docs/all.html
+pygmentsStyle = "tango" # "emacs" # "autumn" # "manni" # "friendly"
+
 # We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/v2/
 
 # Site Menus
@@ -16,18 +22,14 @@ theme = "timer-hugo"
         name    = "Hiboot"
         url     = "https://hiboot.hidevops.io"
         weight  = 3
-    # [[menu.nav]]
-    #     name    = "Gallery"
-    #     url     = "/gallery"
-    #     weight  = 4
-    # [[menu.nav]]
-    #     name    = "Blog"
-    #     url     = "/blog"
-    #     weight  = 5
+    [[menu.nav]]
+        name    = "Blog"
+        url     = "/blog"
+        weight  = 4
     # [[menu.nav]]
     #     name    = "Contact"
     #     url     = "/contact"
-    #     weight  = 6
+    #     weight  = 5
 
 # Site Params
 [params]
