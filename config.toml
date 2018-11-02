@@ -1,6 +1,6 @@
 baseURL = "https://hidevops.io/"
 languageCode = "en-us"
-title = "Hidevops | Deliver Business Value"
+title = "Hidevops | Keep it simple"
 theme = "timer-hugo"
 
 pygmentscodefences = true
@@ -31,10 +31,15 @@ pygmentsStyle = "tango" # "emacs" # "autumn" # "manni" # "friendly"
     #     url     = "/contact"
     #     weight  = 5
 
+[Permalinks]
+    # Vanity Imports with Hugo
+	code = "/:filename/"   
+     
 # Site Params
 [params]
     home = "Home"
     dateFormat = "6 January 2006"
+ 
     #
     # You can use either an image or text as logo.
     # To use an image use 'logo' (logo itself) and 'logo_alt' (alternative text if image cannot displayed)
@@ -49,6 +54,8 @@ pygmentsStyle = "tango" # "emacs" # "autumn" # "manni" # "friendly"
         bgImage = "images/cloud.jpg"
         heading = "HI, MY NAME IS JOHN DENG & I AM A"
         description = "WITH 20 YEARS EXPERIENCE, I'VE OCCUPIED MANY ROLES INCLUDING JAVA EXPERT, GOPHER, CLOUD NATIVE EVANGELIST, DOMAIN DRIVEN DESIGN EXPERT, AND SOFTWARE ARCHITECT"
+        # heading = "This is Hidevops team, we are"
+        # description = "WITH 20 YEARS EXPERIENCE, I'VE OCCUPIED MANY ROLES INCLUDING JAVA EXPERT, GOPHER, CLOUD NATIVE EVANGELIST, DOMAIN DRIVEN DESIGN EXPERT, AND SOFTWARE ARCHITECT"
         btn     = true
         btnText = "Hiboot"
         btnURL  = "https://hiboot.hidevops.io/"
@@ -78,17 +85,17 @@ pygmentsStyle = "tango" # "emacs" # "autumn" # "manni" # "friendly"
     #     btnText = "Contact with me"
     #     btnURL  = "/contact"
 
-    # # Portfolio Section On Homepage
-    # [params.portfolio]
-    #     enable  = true
-    #     title   = "Latest Works"
-    #     subtitle= "Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus."
+    # Portfolio Section On Homepage
+    [params.portfolio]
+        enable  = false
+        title   = "Latest Works"
+        subtitle= "Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus."
 
-    # # Feature Product Section
-    # [params.featureProduct]
-    #     enable  = true
-    #     title   = "SOME OF OUR FEATURES WORKS"
-    #     subtitle= "Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere <br> tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus."
+    # Feature Product Section
+    [params.featureProduct]
+        enable  = false
+        title   = "SOME OF OUR FEATURES WORKS"
+        subtitle= "Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere <br> tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus."
 
     # Footer section
     [params.footer]
