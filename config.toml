@@ -48,27 +48,31 @@ pygmentsStyle = "tango" # "emacs" # "autumn" # "manni" # "friendly"
     logo_alt = "logo"
     #logo_text = "logo_text"
 
+[   params.font]
+    	text = "Ubuntu"
+    	code = "Ubuntu Mono"
+
     # Banner Section
     [params.banner]
         enable  = true
         bgImage = "images/cloud.jpg"
-        heading = "HI, MY NAME IS JOHN DENG & I AM A"
-        description = "WITH 20 YEARS EXPERIENCE, I'VE OCCUPIED MANY ROLES INCLUDING JAVA EXPERT, GOPHER, CLOUD NATIVE EVANGELIST, DOMAIN DRIVEN DESIGN EXPERT, AND SOFTWARE ARCHITECT"
-        # heading = "This is Hidevops team, we are"
-        # description = "WITH 20 YEARS EXPERIENCE, I'VE OCCUPIED MANY ROLES INCLUDING JAVA EXPERT, GOPHER, CLOUD NATIVE EVANGELIST, DOMAIN DRIVEN DESIGN EXPERT, AND SOFTWARE ARCHITECT"
+        heading = "This is Hidevops team & we focus on"
+        description = "DevOps is a way of working that focuses on regularly shipping quality software that meets a business need. It's often achieved through better collaboration inside the organization, with special attention paid to improving throughput by removing roadblocks"
         btn     = true
-        btnText = "Hiboot"
+        btnText = "Hiboot Framework"
         btnURL  = "https://hiboot.hidevops.io/"
         [[params.banner.flipText]]
-            title   = "JAVA EXPERT"
+            title   = "Continuous Integration"
         [[params.banner.flipText]]
-            title   = "GOPHER"    
+            title   = "Continuous Delivery"    
         [[params.banner.flipText]]
-            title   = "EVANGELIST"
+            title   = "Microservices"
         [[params.banner.flipText]]
-            title   = "DOMAIN EXPERT"
+            title   = "Infrastructure as Code"
         [[params.banner.flipText]]
-            title   = "ARCHITECT"
+            title   = "Monitoring and Logging"
+        [[params.banner.flipText]]
+            title   = "Communication and Collaboration"
 
     # Homepage About Section
     # [params.about]
