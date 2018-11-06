@@ -410,4 +410,6 @@ Hello Hiboot gRPC Application
 
 **以上源码可以在[这里](https://github.com/hidevopsio/hiboot/tree/master/examples/grpc/helloworld)找到**
 
-如果你对本文章有任何疑问，你可以加入我们的微信群讨论。
+识别二维码加入公众号，获取更多文章。
+
+![grpc](/images/pa-qrcode.jpg)
