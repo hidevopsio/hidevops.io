@@ -1,5 +1,5 @@
 ---
-title: "构建Go版本的gRPC高性能接口"
+title: "构建Go语言版本的gRPC高性能接口"
 date: 2018-10-31T12:29:40+06:00
 type: post
 image: images/blog/hiboot-grpc/header.png
@@ -92,7 +92,7 @@ message HolaReply {
 
 ### 配置文件 config/application.yml
 
-为什么要配置文件？虽然这是演示代码，但是我们还是安装标准流程来写，也就是我们以能上生产环境的标准来做的。
+为什么要配置文件？虽然这是演示代码，但是我们还是尽量按照生产线的标准流程来写。
 
 ```yaml
 app:
