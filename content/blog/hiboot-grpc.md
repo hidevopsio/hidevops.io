@@ -1,5 +1,5 @@
 ---
-title: "构建Go语言版本的gRPC高性能接口"
+title: "构建Go版本的gRPC高性能接口"
 date: 2018-10-31T12:29:40+06:00
 type: post
 image: images/blog/hiboot-grpc/header.png
@@ -17,7 +17,7 @@ RPC是英语Remote Procedure Call的缩写，意思是远程程序调用。gRPC�
 
 gRPC使用protocol buffers作为其IDL(接口描述）和其底层消息交换格式。
 
-![grpc](/images/blog/hiboot-grpc/grpc-intro.svg)
+![grpc](/images/blog/hiboot-grpc/grpc.png)
 
 ## 什么是 [Protocol Buffer](https://developers.google.com/protocol-buffers/)
 
