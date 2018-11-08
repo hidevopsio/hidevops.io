@@ -72,7 +72,9 @@ pygmentsStyle = "tango" # "emacs" # "autumn" # "manni" # "friendly"
         [[params.banner.flipText]]
             title   = "Monitoring and Logging"
         [[params.banner.flipText]]
-            title   = "Communication and Collaboration"
+            title   = "Communication"
+        [[params.banner.flipText]]
+            title   = "Collaboration"    
 
     # Homepage About Section
     # [params.about]
