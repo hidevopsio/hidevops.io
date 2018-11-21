@@ -25,9 +25,8 @@ aliases:
 - hiboot/pkg/starter/actuator
 - hiboot/pkg/starter/grpc
 - hiboot/pkg/starter/grpc/config
-- hiboot/pkg/starter/grpc/mock
+- hiboot/pkg/starter/grpc/mockgrpc
 - hiboot/pkg/starter/jwt
-- hiboot/pkg/starter/jwt/at
 - hiboot/pkg/starter/locale
 - hiboot/pkg/starter/logging
 - hiboot/pkg/starter/websocket
@@ -52,6 +51,5 @@ aliases:
 - hiboot/pkg/utils/replacer
 - hiboot/pkg/utils/sort
 - hiboot/pkg/utils/str
-- hiboot/pkg/utils/validator   
-
+- hiboot/pkg/utils/validator
 ---
