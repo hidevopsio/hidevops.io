@@ -412,4 +412,4 @@ Hello Hiboot gRPC Application
 
 识别二维码加入公众号，获取更多文章。
 
-![grpc](/images/pa-qrcode.jpg)
+![hidevops](/images/pa-qrcode.jpg)
