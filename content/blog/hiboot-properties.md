@@ -46,6 +46,19 @@ _  __  / _  / _  /_/ / /_/ / /_/ / /_     Hiboot Application Framework
 
 ```
 
+>通过设置方法`SetAddCommandLineProperties(false)`可以关闭命令行属性的设置功能。
+
+```go
+
+// main function
+func main() {
+	// create new web application and run it
+	web.NewApplication(new(Controller)).
+		SetAddCommandLineProperties(false).
+		Run()
+}
+```
+
 ## 应用 SetProperty 方法
 
 Hiboot也可以通过`SetProperty`方法来配置属性，在`main`函数下面，创建应用示例之后, 可以通过链式调用来设置一个或多个属性。
