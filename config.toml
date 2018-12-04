@@ -24,7 +24,7 @@ pygmentsStyle = "tango" # "emacs" # "autumn" # "manni" # "friendly"
         weight  = 3
     [[menu.nav]]
         name    = "Reading"
-        url     = "https://reading.hidevops.io"
+        url     = "https://reading.developerlearning.cn"
         weight  = 4    
     [[menu.nav]]
         name    = "Blog"
