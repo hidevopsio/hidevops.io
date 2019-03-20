@@ -135,3 +135,6 @@ Events:
 
 	解决：直接访问域名不会自动跳转,需要加 `/kiali/console` 才能进入登陆界面
 
+       成功访问 kiali，如图显示，有三个服务正在被访问：
+
+   ![kiali](/images/blog/istio-1.1/007.png)
