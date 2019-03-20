@@ -3,6 +3,7 @@ desc: 由 genpost (https://github.com/hidevopsio/genpost) 代码生成器生成
 title: Istio 1.1 尝鲜记
 date: 2019-03-20T15:15:23+08:00
 author: gobomb
+tags: [""]
 ---
 
 ## 环境
@@ -16,17 +17,16 @@ author: gobomb
  
 `export PATH="$PATH:/root/istio-1.1.0/bin"`
 
-## 在 Helm 和 Tiller 的环境中使用 `helm install` 命令进行安装
 
 ### 安装 Tiller
+
+这里选择在 Helm 和 Tiller 的环境中使用 `helm install` 命令进行安装的方式。
 
 `kubectl apply -f install/kubernetes/helm/helm-service-account.yaml`
 
 假如已经安装过，结果如下：
 
 ![apply-install](/images/blog/istio-1.1/002.png)
-
-
 
 `helm init --service-account tiller`
 
@@ -44,11 +44,12 @@ author: gobomb
 
 ![install-init](/images/blog/istio-1.1/004.png)
 
-确认 Istio 的 CRD 都已经成功的提交给 Kubernetes API Server
+确认 Istio 的 CRD 都已经成功的提交给 Kubernetes API Server:
 
 `kubectl get crds | grep 'istio.io\|certmanager.k8s.io' | wc -l`
 
 55
+
 
 
 ### 安装 istio
@@ -105,20 +106,17 @@ For more information on running Istio, visit:
 https://istio.io/
 ```
 
+查看 istio 的 pod：
 
-遇到的问题：
+![get-pod](/images/blog/istio-1.1/005.png)
+
+## 遇到的问题：
 
 1. istio-init 需要的镜像拉不下来
 
+	`kubectl describe po istio-init-crd-10-vmq9p -n istio-system`
 
-`kubectl get po -n istio-system`
-
-![install-init](/images/blog/istio-1.1/003.png)
-
-
-`kubectl describe po istio-init-crd-10-vmq9p -n istio-system`
-
-```
+	```
 Events:
   Type     Reason     Age                   From                  Message
   ----     ------     ----                  ----                  -------
@@ -128,12 +126,12 @@ Events:
   Warning  Failed     83s (x4 over 3m43s)   kubelet, 10.10.12.81  Error: ErrImagePull
   Normal   BackOff    56s (x6 over 3m42s)   kubelet, 10.10.12.81  Back-off pulling image "gcr.io/istio-release/kubectl:master-latest-daily"
   Warning  Failed     43s (x7 over 3m42s)   kubelet, 10.10.12.81  Error: ImagePullBackOff
-```
+	```
 
 
-解决方法是到可以拉到的机器拉取到所有需要的镜像，再导入到集群。
+	解决：到可以拉到的机器拉取到所有需要的镜像，再导入到集群
 
 2. 安装完成后，给 kiali 创建 ingress 成功但是浏览器访问结果是404
 
-解决：直接访问域名不会自动跳转,需要加 `/kiali/console` 才能进入登陆界面
+	解决：直接访问域名不会自动跳转,需要加 `/kiali/console` 才能进入登陆界面
 
